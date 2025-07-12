@@ -4,6 +4,14 @@ import React from 'react';
 import NavBar from './components/NavBar'; 
 
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Awards from "./pages/Awards";
+import Consultancy from "./pages/Consultancy";
+import Activity from "./pages/Activity";
+import Certificate from "./pages/Certificate";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -11,37 +19,22 @@ function App() {
       <NavBar />
         <Home />
 
-      <section id="about" className="min-h-screen bg-green-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">About</h2>
-      </section>
+        <About />
 
-      <section id="experience" className="min-h-screen bg-orange-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Experience</h2>
-      </section>
+        <Experience />
 
-      <section id="awards" className="min-h-screen bg-purple-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Awards</h2>
-      </section>
+        <Awards />
 
-      <section id="consultancy" className="min-h-screen bg-pink-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Consultancy</h2>
-      </section>
+        <Consultancy />
+    
+        <Activity />
 
-      <section id="activity" className="min-h-screen bg-indigo-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Activity</h2>
-      </section>
+        <Certificate />
+        
+        <Projects />
 
-      <section id="certificate" className="min-h-screen bg-lime-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Certificate</h2>
-      </section>
+        <Contact />
 
-      <section id="projects" className="min-h-screen bg-cyan-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Projects</h2>
-      </section>
-
-      <section id="contact" className="min-h-screen bg-yellow-100 flex items-center justify-center">
-        <h2 className="text-3xl font-bold">Contact</h2>
-      </section>
     </div>
   );
 }
