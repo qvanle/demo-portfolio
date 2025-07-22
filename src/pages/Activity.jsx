@@ -6,7 +6,7 @@ export default function Activity() {
       id="activity"
       className="min-h-screen bg-gradient-to-r from-purple-50 via-indigo-50 to-teal-50 scroll-mt-20 flex items-center justify-center px-6"
     >
-      <div className="w-full max-w-6xl bg-white rounded-3xl shadow-xl grid grid-cols-1 md:grid-cols-2 gap-10 p-10 items-center">
+      <div className="w-full max-w-6xl bg-transparent rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-10 p-10 items-center">
         
         {/* Left: Text content */}
         <div>

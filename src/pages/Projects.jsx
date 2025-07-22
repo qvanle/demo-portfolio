@@ -6,7 +6,7 @@ export default function Projects() {
       id="projects"
       className="min-h-screen bg-gradient-to-r from-purple-50 via-indigo-50 to-teal-50 scroll-mt-20 flex items-center justify-center px-6"
     >
-      <div className="w-full max-w-5xl bg-white rounded-3xl shadow-xl p-10">
+      <div className="w-full max-w-5xl rounded-3xl p-10">
         <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8 text-center">
           Topics & Dự án
         </h2>
