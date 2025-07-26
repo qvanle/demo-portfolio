@@ -4,27 +4,30 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-gradient-to-r from-purple-50 via-indigo-50 to-teal-50 scroll-mt-20 flex items-center justify-center px-6"
-    >
-      <div className="w-full max-w-5xl rounded-3xl p-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8 text-center">
-          Topics & Dự án
+    > 
+      <div className="min-h-screen flex flex-col items-center justify-center px-6 scroll-mt-20 bg-gradient-to-r from-white via-purple-50 to-teal-50">
+      <div className="w-full max-w-5xl">
+        <h2 className="text-4xl font-extrabold text-center text-indigo-800 mb-12 tracking-tight">
+          📘 Topics & Dự án
         </h2>
 
-        <div className="space-y-8 text-gray-800 text-sm">
+        <div className="grid gap-8 md:grid-cols-2">
           {projectLinks.map((group, index) => (
-            <div key={index}>
-              <h3 className="text-lg font-semibold text-purple-700 mb-3">
+            <div
+              key={index}
+              className="p-6 rounded-3xl bg-white/10 hover:bg-white/20 transition duration-200 backdrop-blur-sm"
+            >
+              <h3 className="text-lg font-semibold text-purple-700 mb-4">
                 {index + 1}. {group.category}
               </h3>
-              <ul className="list-decimal list-inside ml-4 space-y-2">
+              <ul className="list-decimal list-inside space-y-2 text-sm text-gray-800">
                 {group.items.map((item, i) => (
                   <li key={i}>
                     <a
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
+                      className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
                     >
                       {item.name}
                     </a>
@@ -35,6 +38,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+        </div>
     </section>
   );
 }

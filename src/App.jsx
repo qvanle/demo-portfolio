@@ -12,6 +12,7 @@ import Activity from "./pages/Activity";
 import Certificate from "./pages/Certificate";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
         <Projects />
 
         <Contact />
+    
+        <Footer />
 
     </div>
   );
